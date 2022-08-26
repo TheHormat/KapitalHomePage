@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+    <title>Kapital Bank</title>
+</head>
+<body>
+    <div style="position:relative;" class="container">
+        <div class="container-img">
+            <img src="img/Logo--main.svg" alt="">
+        </div>
+        <div class="container-text">
+            <ul>
+                <li style="font-weight: 600;">
+                    Fiziki şəxslər üçün
+                </li>
+                <li style="font-weight: 300;">
+                    Biznes üçün
+                </li>
+                <li>
+                    <i style="color: red;" class="fa-solid fa-location-dot"></i>
+                </li>
+                <li style="font-weight: 300;">
+                    Xidmət şəbəkəsi
+                </li>
+                <li style="font-weight: 300;">
+                    EN
+                </li>
+                <li style="font-weight: 300;">
+                    RU
+                </li>
+                <li id="open-search">
+                    <i style="color: red; border:1px solid red; padding:5px; border-radius:5px;" class="fa-solid fa-magnifying-glass"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="s-container">
+        <div class="search-bar">
+            <div class="logo">
+                <img src="https://www.kapitalbank.az/assets/static/img/small-logo.svg" alt="">
+                </div>
+            <div class="s-input">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Sorğunuzu daxil edin...">
+            </div>
+            <a href="#">Axtar</a>
+            <button id="close">&times;</button>
+            </div>
+            <ul class="demo-1"> <li><a href="https://www.kapitalbank.az/online-credit/birkart-taksit?menbe=searchbar">Birbank kartı al</a></li> <li><a href="https://www.kapitalbank.az/online-cash-credit/cash-loan?menbe=searchbar">kredit əldə et</a></li> <li><a href="https://www.kapitalbank.az/online-order/card?menbe=searchbar">kart sifarişi</a></li> <li><a target="_blank" href="https://payments.kapitalbank.az/merchants/99?menbe=searchbar">kredit ödənişi</a></li> <li><a target="_blank" href="https://payments.kapitalbank.az/merchants/12?menbe=searchbar">kommunal ödənişlər</a></li> </ul>
+        </div>
+    </div>
+    </div>
+
+    <nav>
+        <div class="wrapper">
+    
+            <ul class="nav-links">
+                <li>
+                    <a href="#">KARTLAR</a>
+                    <div style="display: flex;" class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li style="color:#f45369; font-weight:700;">130 AZN xərclə, 30 AZN qazan!</li>
+                                    <li style="font-weight:500;">Taksit Kartlar</li>
+                                    <li style="font-weight:500;">Debet Kartlar</li>
+                                    <li style="font-weight:500;">Digital kartlar</li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li>Hədiyyə kartı</li>
+                                    <li>Kartın müddətinin uzadılması</li>
+                                    <li>Kartlar üzrə xidmətlər</li>
+                                    <li>Təhlükəsizlik qaydaları</li>
+                                </ul>
+                            </div>                            
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li>3D secure</li>
+                                    <li>Kart sifarişi</li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <div class="img-content">
+                            <div>
+                                <h3>Birbank Cashback</h3>
+                                <p style="font-size: 12px; width:100%;">Kartla edilən nağdsız ödənişlərə minimum 1.5%-dən  başlayan keşbek, faizsiz və komissiyasız taksit imkanı verən unikal bir kartdır.</p>
+                                <button id="hovnav-btn">Bir kliklə sifariş et</button>
+                            </div>
+                            <div><img id="nav1" src="img/nav-1.png" alt=""></div>
+
+                        </div>
+                    </div> 
+                    </li>
+                <li>
+                    <a href="#">KREDİTLƏR</a>
+                    <div style="display: flex;" class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li style="color:#f45369; font-weight:700;">13%-dən başlayan Gündəlik Təlabat Krediti!</li>
+                                    <li style="font-weight:500;">Gündəlik təlabat krediti</li>
+                                    <li style="font-weight:500;">Mikro Biznes Kreditləri</li>
+                                    <li style="font-weight:500;">Təminatlı manat krediti</li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li>Əmanət təminatlı kredit</li>
+                                    <li>Daşınmaz əmlak təminatlı kredit</li>
+                                </ul>
+                            </div>                            
+                        </div>
+                        <div class="img-content">
+                            <div>
+                                <h3>Gündəlik tələbat krediti</h3>
+                                <p style="font-size: 12px; width:100%;">30000 AZN-dək gündəlik təlabat krediti.</p>
+                                <button id="hovnav-btn">Bir kliklə sifariş et</button>
+                            </div>
+                            <div class=""><img src="img/daily-loan3.png" alt=""></div>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">İPOTEKALAR</a>
+
+                </li>
+                <li>
+                    <a href="#">DEPOZİTLƏR</a>
+                    <div style="display: flex;" class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li style="font-weight:500;">Kapital depoziti</li>
+                                    <li style="font-weight:500;">Müddətsiz depozit</li>
+                                    <li style="font-weight:500;">Depozit seyfləri</li>
+                                </ul>
+                            </div>                          
+                        </div>
+                        <div class="img-content">
+                            <div>
+                                <h3>Kapital Depoziti</h3>
+                                <p style="font-size: 12px; width:100%;">Yüksək faiz əldə etməklə yanaşı müddətin yarısınadək məbləğı artırın.</p>
+                                <button id="hovnav-btn">Daha ətraflı</button>
+                            </div>
+                            <div class=""><img src="img/deposits.png" alt=""></div>
+
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">PUL KÖÇÜRMƏLƏRİ</a></li>
+                <li>
+                    <a href="#">ONLAYN XİDMƏTLƏR</a>
+                    <div style="display: flex;" class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li style="color:#f45369; font-weight:700;">130 AZN xərclə, 30 AZN qazan!</li>
+                                    <li style="font-weight:500;">Taksit Kartlar</li>
+                                    <li style="font-weight:500;">Debet Kartlar</li>
+                                    <li style="font-weight:500;">Digital kartlar</li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li>Hədiyyə kartı</li>
+                                    <li>Kartın müddətinin uzadılması</li>
+                            </div>
+                        </div>
+                        <div class="img-content">
+                            <div>
+                                <h3>Birbank Cashback</h3>
+                                <p style="font-size: 12px; width:100%;">Kartla edilən nağdsız ödənişlərə minimum 1.5%-dən  başlayan keşbek, faizsiz və komissiyasız taksit imkanı verən unikal bir kartdır.</p>
+                                <button id="hovnav-btn">Bir kliklə sifariş et</button>
+                            </div>
+                            <div class=""><img id="nav1" src="img/nav-1.png" alt=""></div>
+
+                        </div>
+                    </div> 
+                </li>
+                <li><a href="#">KAMPANİYALAR</a></li>
+                <li><a href="#">FƏRDİ BANKÇILIQ</a></li>
+            </ul>
+            <button id="nav-button"><img src="img/unnamed.png" alt=""> birbank</button>
+
+        </div>
+
+
+
+    </nav>
+
+    <div class="gret">
+        <div class="row">
+            <h2>Yeni Birbank kartları</h2><br>
+            <ul>
+                <li><span  id="red">Pulsuz</span><br> Nağdlaşdır və köçür</li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <li><span  id="red">Hər yerdə</span><br> 1,5-30% Keşbek</li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <li><span  id="red">İkiqat</span><br> ƏDV</li>
+            </ul><br>
+            <button id="cart-btn">Ətraflı</button>
+
+        </div>
+
+        <div class="wor">
+            <img src="img/yeni-birbank-kartlari1656964647.png" alt="">
+        </div>
+    </div>
+    <br><br><br><br>
+
+
+
+
+    <div style="margin-left:60px;" class="qutular">
+        <h1 style="font-weight: 400;">Çevik <span style="font-weight: 600;">əməliyyatlar</span> </h1>
+
+        <div class="qutu">
+            <center>
+                <ul>
+                    <li>
+                    <center>
+                        <img style="width: 50px;" src="img/birbank-karti.svg" alt=""><br><br>
+                        <h5 style="font-weight: 600;">Birbank kartı</h5>
+                        <h6 style="font-weight: 400;">sifariş et</h6>
+                    </center>
+                    </li>
+    
+                    <li>
+                    <center>
+                        <i style="color: #f45369; font-size:45px;" class="fa-solid fa-sack-dollar"></i> <br><br>
+                        <h5 style="font-weight:400;"><span style="font-weight: 700; font-size:18px;">Kredit</span>  sifariş et</h5>
+                    </center>
+                    </li>
+    
+                    <li>
+                    <center>
+                        <i style="color: #f45369; font-size:45px;" class="fa-solid fa-house-chimney"></i> <br><br>
+                        <h5 style="font-weight:400;"><span style="font-weight: 700; font-size:18px;">İpoteka</span>  sifariş et</h5>
+                    </center>
+                    </li>
+    
+                    <li>
+                    <center>
+                        <i style="color: #f45369; font-size:45px;" class="fa-solid fa-credit-card"></i><br><br>
+                        <h5 style="font-weight:400;"><span style="font-weight: 700; font-size:18px;">Debet kart</span>  sifariş et</h5>
+                    </center>
+                    </li>
+    
+                    <li>
+                    <center>
+                        <i style="color: #f45369; font-size:45px;" class="fa-solid fa-bullhorn"></i><br><br>
+                        <h5 style="font-weight:400;"><span style="font-weight: 700; font-size:18px;">Kompaniyalara</span>  bax</h5>
+                    </center>
+                    </li>
+                </ul>
+            </center>
+
+        </div>
+    </div>
+    <br><br>
+
+
+
+    <div class="cash">
+        <h1 style="font-weight: 400;">Birbank <span style="font-weight: 600;">Cashback</span> </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit expedita <br> error inventore veritatis unde quos pariatur molestias, optio itaque.</p>
+    </div>
+
+
+    <div class="cart">
+        <div class="buttons">
+        <button id="prev1">&larr;</button>
+        <button id="next1">&rarr;</button>
+    </div>
+        <ul class="active">
+            <li>
+                <span>1.5%-dən başlayan</span>  <br>
+                Keşbek
+                <br><br>
+                <button id="cart-btn">Sifariş et</button>
+            </li>
+            <li>
+                <span>pulsuz</span>  <br>
+                Kartın qiyməti
+            </li>
+            <li>
+                <span>63 günədək</span>  <br>
+                Güzəşt müddəti
+            </li>
+            <li>
+                <img style="width: 300px;" src="img/birbank-cashback-red-home.png" alt="">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span>30%-dək keşbek və 2 qat ƏDV</span>  <br>
+                Keşbek
+                <br><br>
+                <button id="cart-btn">Sifariş et</button>
+            </li>
+            <li>
+                <span>pulsuz</span>  <br>
+                Kartın qiyməti
+            </li>
+            <li>
+                <span>63 günədək</span>  <br>
+                Güzəşt müddəti
+            </li>
+            <li>
+                <img style="width: 300px;" src="https://www.kapitalbank.az/images/cards/B/birbank-cashback-home.png" alt="">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span>1 AZN = 1 Mil</span>  <br>
+                Keşbek
+                <br><br>
+                <button id="cart-btn">Sifariş et</button>
+            </li>
+            <li>
+                <span>pulsuz</span>  <br>
+                Kartın qiyməti
+            </li>
+            <li>
+                <span>63 günədək</span>  <br>
+                Güzəşt müddəti
+            </li>
+            <li>
+                <img style="width: 300px;" src="https://www.kapitalbank.az/images/cards/B/birbank-umico-home.png" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <br><br>
+    <div class="daily">
+        <center>
+            <h1 style="font-weight: 400;">Gündəlik <span style="font-weight: 600;">tələbat krediti</span> </h1>
+            <p style="font-size: 16px; margin-left:21%;">30000 AZN-dək, arzularınızı reallaşdırmaq və ya ehtiyaclarınızı ödəmək üçün nağd kredit təklif edirik.</p>
+        </center>
+    </div>
+
+    <div class="daily-txt">
+        <ul>
+            <li>
+                <img src="img/daily-loan3.png" alt="">
+            </li>
+            <li>
+                <input placeholder="FİN-kod" maxlength="7" type="text" id="fhn">
+                <br> <br>
+                <div style="display: flex;">
+                    <input type="checkbox" id="chekbox">
+                    <p style="font-size: 12px;">Məlumatlarımın doğruluğunu təsdiq edir, kredit öhdəliklərim <br> barədə məlumatları <span style="color: red;">AKB KR</span> -dən sorğu etməyə, <span style="color: red;">EHP </span> də <br>qeydiyyatdan keçirməyə və digər məlumat bazalarından <br> məlumatlarımın toplanmasına razılığımı bildirirəm.</p>
+                </div>
+
+            </li>
+
+            <li id="input3">
+                <div style="display: flex;">
+                    <select id="cars">
+                        <option value="volvo">051</option>
+                        <option value="saab">055</option>
+                        <option value="opel">050</option>
+                        <option value="audi">070</option>
+                        <option value="audi">077</option>
+                        <option value="audi">090</option>
+                        <option value="audi">060</option>
+
+                    </select>
+                    <input type="tel" maxlength="7" id="phone"><br><br>
+                    
+                </div>
+                <br>
+
+                <button id="cart-btn">Sifariş et</button>
+
+            </li>
+        </ul>
+    </div>
+
+    <div class="calc">
+        <div class="calc-1">
+            <h2>Kalkulyator</h2><br>
+            <div class="calc-buttons">
+                <button id="active">Kredit</button>
+                <button>Birbank kartı</button>
+                <button>İpoteka</button>
+                <button>Depozit</button>
+            </div><br>
+            <h5>Gündəlik tələbat krediti</h5>
+            <span>Siz müştərilərimizə asanlıqla əldə edə biləcəyiniz nağd kredit təklif edirik.</span>
+            <br><br>
+            <div class="box">
+                <div class="value"><span style="color: rgb(179, 176, 176); font-size:12px;">Məbləğ</span>  <br> 100</div>
+                <input type="range" value="1" min="300" max="30000">
+                <div style="display: flex; justify-content:space-between;">
+                    <div class="val">300</div>
+                    <div class="val">30000</div>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="box">
+                <div class="value"><span style="color: rgb(179, 176, 176); font-size:12px;">Müddət</span> <br> 3</div>
+                <input value="1" type="range" min="3" max="60">
+                <div style="display: flex; justify-content:space-between;">
+                    <div class="val">3 ay</div>
+                    <div class="val">60 ay</div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        
+
+        <div class="calc-2">
+            <center>
+                <h4 style="font-weight:400;">Nağd pul krediti üçün <br> aylıq ödəniş</h4><br>
+                <h1 style="color: #f45369; font-size:50px; font-weight:700;">103.38₼</h1><br>
+                <button id="cart-btn">Sifariş et</button>
+            </center>
+        </div>
+    </div>
+
+
+    <div class="online">
+        <div class="grey">
+            <div>
+                <h1 style="margin-left: 40px; width:400px;">Onlayn kredit ödənişi</h1>
+                <p style="margin-left: 40px; font-size:14px;">Banka gəlmədən və növbələrdə vaxt itirmədən kartınızla 4 addıma kredit borcunuzun ödənişi.</p><br><br><br><br>
+                <span style="color:red; margin-left: 40px;">Ödəniş et <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <img style="height:280px;" src="img/cashPayment.webp" alt="">
+        </div>
+
+        <div class="red">
+            <div>
+                <h1 style="margin-left: 40px; width:400px;">İnsan resursları</h1>
+                <p style="margin-left: 40px; font-size:14px;">Kapital Bankın peşəkarlar komandasına qoşulmaq istəyirsinizsə, Sizi müvafiq vakansiyaya müraciət etməyə dəvət edirik. Biz sizə dinamik mühitdə maraqlı və perspektivli iş təklif edirik.</p><br><br><br>
+                <span style="color:white; margin-left: 40px;">Daha ətraflı <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <img style="width: 200px; height:230px; margin-top:50px;" src="img/90789318742-min.webp" alt="">
+        </div>
+    </div>
+
+
+    <div style="padding:10px;" class="swiper xeber">
+        <div class="xeber-hr">
+            <h2>Xəbərlər</h2>
+            <p style="color: #f45369; ">Bütün xəbərlər <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+        <hr style="width: 92%; height:2px; background-color:white;">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">01</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+          <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">02</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+          <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">03</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+
+            <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">04</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+            <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">05</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+            <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">06</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+            <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">07</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+
+            <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">08</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+
+            <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">09</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+
+            <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">10</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+
+            <div class="swiper-slide">            <div style="display:flex;" class="caption">
+                <div>
+                    <span id="caption-number">11</span><br><br>
+                    <span>Avqust</span>
+                </div>
+
+                <div class="caption-txt">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+            </div></div>
+
+            <div class="swiper-slide">
+                <div style="display:flex;" class="caption">
+                    <div>
+                        <span id="caption-number">12</span><br><br>
+                        <span>Avqust</span>
+                    </div>
+
+                    <div class="caption-txt">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+    <div class="valyuta">
+        <div class="valyuta-text">
+            <h1><span style="font-weight:400;">Valyuta</span>  kalkulyatoru</h1>
+            <p style="font-weight:300; margin-bottom:50px;">Bəzi filiallar üzrə fəqrli məzənnələr təyin edilə bilər</p>
+
+
+            <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Valyuta</td>
+                    <td>Alış</td>
+                    <td>Satış</td>
+                  </tr>
+                  <tr>
+                    <td>USD  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>1.697</td>
+                    <td><span style="font-weight: 600;">1.702</span></td>
+                  </tr>
+                  <tr>
+                    <td>EUR</td>
+                    <td>1.6925 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><span style="font-weight: 600;">1.7425</span> </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="color:#f45369; cursor:pointer;">Daha ətraflı <i class="fa-solid fa-arrow-right"></i></p>
+
+
+        </div>
+
+        <div class="has">
+            <form name="converter">
+                <fieldset>
+                    <label> AZE </label>
+                    <input id="az" type="number" name="rupees" value="100" required>
+                    <input id="current" type="button" value="Axtar" onclick="currencyConverter(converter.rupees.value)">
+                    <label id="yan">Alış</label>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label> 
+                    <label id="yan">Satış</label><br>
+                    <center><p>Satış məbləği daxil edin</p></center>
+                    <hr style="background-color: #fff; height:1px;">
+    
+                    <div class="marg">
+                        <label>USD</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input value="58.75" id="dollar"><br>
+                    </div>
+
+                    <hr style="background-color: #fff; height:1px;">
+                    <div class="marg">
+                        <label>EUR</label>
+                        <input value="58.19" id="euro">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    
+
+
+
+    <div class="footer">
+        <div class="footer-head">
+            <div class="footer-1">
+                <ul>
+                    <li style="font-weight: 800;">
+                        Kapital Bank
+                    </li>
+                    <li id="hover">
+                        Bank haqqında 
+                    </li>
+                    <li>
+                        İnsan resursları
+                    </li>
+                    <li id="hover">
+                        Xidmət şəbəkəsi
+                    </li>
+                    <li id="hover">
+                        Birbank 
+                    </li>
+                    <li id="hover">
+                        Xəbərlər
+                    </li>
+                    <li id="hover">
+                        Təklif və şikayətlər
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <div class="footer-2">
+                <ul>
+                    <li style="font-weight: bolder;">
+                        Məhsullar
+                    </li>
+                    <li id="hover">
+                        Kartlar
+                    </li>
+                    <li id="hover">
+                        Kreditlər
+                    </li>
+                    <li id="hover">
+                        Depozitlər
+                    </li>
+                    <li id="hover">
+                        Sığorta
+                    </li>
+                    <li id="hover">
+                        Pul köçürmələri
+                    </li>
+                    <li id="hover">
+                        Fərdi Bankçılıq
+                    </li>
+                    <li id="hover">
+                        Onlayn Xidmətlər
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-3">
+                <ul>
+                    <li style="font-weight: bolder;">
+                        <span>Çevik keçidlər</span> 
+                    </li>
+                    <li id="hover">
+                        Birbank kartı sifariş et
+                    </li>
+                    <li id="hover">
+                        Kredit sifariş et
+                    </li>
+                    <li id="hover">
+                        Debet kart sifariş et
+                    </li>
+                    <li id="hover">
+                        Onlayn ödənişlər
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-4">
+                <ul>
+                    <li style="font-weight: bolder;">
+                        Digər
+                    </li>
+                    <li id="hover">
+                        Onlayn növbə
+                    </li>
+                    <li id="hover">
+                        Tariflər
+                    </li>
+                    <li id="hover">
+                        Necə etməli
+                    </li>
+                    <li id="hover">
+                        FAQ
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-5">
+                <center>
+                    <h6 style="font-size: 14px;">Birbank tətbiqini yükləmək üçün <br>
+                        QR-kodunu oxudun.</h6>
+                        <img style=" margin-bottom:20px;" src="img/qr-code.svg" alt="">
+
+                </center>
+    
+                        <ul>
+                            <li>
+                                <div>
+                                    <img style="padding: 5px;" src="img/play-store.svg" alt="">
+                                </div>
+                                <div>
+                                    <span style="font-weight:700;">Google Play</span><br>
+                                    <span style="font-weight:500;">Mobil tətbiqi yüklə</span> 
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div>
+                                    <img style="padding: 5px;" src="img/app-store.svg" alt="">
+                                </div>
+                                <div>
+                                    <span style="font-weight:700;">App Store</span><br>
+                                    <span style="font-weight:500;">Mobil tətbiqi yüklə</span> 
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div>
+                                    <img style="padding: 5px;" src="img/app-gallery.svg" alt="">
+                                </div>
+                                <div>
+                                    <span style="font-weight:700;">App Gallery</span>  <br>
+                                    <span style="font-weight:500;">Mobil tətbiqi yüklə</span> 
+                                </div>
+                            </li>
+                        </ul>
+                
+    
+            </div>
+        </div>
+
+
+        <hr style="width: 90%; background-color:rgb(124, 122, 122);">
+
+        <div class="footer-text">
+            <div style="font-weight: 300; padding-right:120px;">
+                © 2022 «Kapital Bank» ASC. Bütün hüquqlar qorunur.
+            </div>
+            <div >
+                <ul style="display: flex; align-items:center;">
+                    <li>
+                        <img src="img/93817465.png" alt="">
+                    </li>
+                    <li>
+                        <img style="width: 80px;" src="img/aesf-logo.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/info.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/msp.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        slidesPerView:4
+      });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
